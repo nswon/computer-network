@@ -11,11 +11,11 @@ public class InputStream1 {
         for(int i=0; i<input.length; i++) {
             try {
                 b = System.in.read();
-                System.in.read();
+                System.in.read(); // enter
             } catch (IOException e) {
                 System.out.println("IOException");
             }
-            input[i] = (byte) b; // int 를 byte 에다가 넣으려고 하니까 오류가 뜸 -> 형변환을 해줌
+            input[i] = (byte)b; // int 를 byte 에다가 넣으려고 하니까 오류가 뜸 -> 형변환을 해줌
         }
 
         System.out.println(input);
